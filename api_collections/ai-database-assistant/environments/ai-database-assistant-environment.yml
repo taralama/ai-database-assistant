@@ -1,0 +1,4 @@
+name: ai-database-assistant-environment
+variables:
+  - name: base_url
+    value: http://localhost:5000/

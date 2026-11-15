@@ -4,12 +4,15 @@ import "dotenv/config";
 import express from "express";
 import { AppDataSource } from "./AppDataSource";
 import { User } from "./entities/User";
+import {router} from './routes/chat.route'
 
 const app = express();
 
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
+
+ app.use('/chat',router)
 
 app.get("/", async(_req, res) => {
 

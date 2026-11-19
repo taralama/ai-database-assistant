@@ -1,0 +1,21 @@
+info:
+  name: chat
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}chat"
+  body:
+    type: json
+    data: |-
+      {
+        "message": "name the users who took course "
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

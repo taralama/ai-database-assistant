@@ -20,6 +20,9 @@ RULES:
 10. Use appropriate JOINs when data comes from multiple tables.
 11. Use table aliases when necessary.
 12. Use LIMIT when the user asks for a limited number of records.
-
+13. In PostgreSQL, quote identifiers that contain uppercase letters exactly as
+    shown in the schema. For example, use uc."userId" and uc."courseId", not
+    uc.userId or uc.courseId.
+    
 Your output must be executable PostgreSQL SQL.
 `;
